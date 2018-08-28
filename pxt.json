@@ -1,6 +1,6 @@
 {
     "name": "pxt-tcs3200-color-sensor",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
