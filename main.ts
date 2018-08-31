@@ -65,39 +65,29 @@ namespace tcs3200 {
 
     //%block="color: %choice"
     export function color_choice(choice: color): number {
+        let returnValue: number
         switch (choice) {
             case 0:
                 pins.digitalWritePin(s2, 0)
                 pins.digitalWritePin(s3, 0)
                 reset_wavecount(freq)
-                if (wavecount * r_factor <= 255) {
-                    return wavecount * r_factor
-                }
-                else {
-                    return 255
-                }
+                returnValue = wavecount * r_factor
             case 1:
                 pins.digitalWritePin(s2, 1)
                 pins.digitalWritePin(s3, 1)
                 reset_wavecount(freq)
-                if (wavecount * g_factor <= 255) {
-                    return wavecount * g_factor
-                }
-                else {
-                    return 255
-                }
+                returnValue = wavecount * g_factor
             case 2:
                 pins.digitalWritePin(s2, 0)
                 pins.digitalWritePin(s3, 1)
                 reset_wavecount(freq)
-                if (wavecount * b_factor <= 255) {
-                    return wavecount * b_factor
-                }
-                else {
-                    return 255
-                }
-            default:
-                return 0
+                returnValue = wavecount * b_factor
+        }
+        if (returnValue <= 255) {
+            return returnValue
+        }
+        else {
+            return 255
         }
     }
 }
