@@ -10,7 +10,7 @@ input.onButtonPressed(Button.A, function () {
         DigitalPin.P8,
         DigitalPin.P12,
         DigitalPin.P2,
-        30
+        50
     )
     cal = false
 })

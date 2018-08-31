@@ -25,7 +25,7 @@ namespace tcs3200 {
 
     /**
      * Calibrate the sensor.
-     * @param time waiting time; eg: 30, 10, 100, 1000
+     * @param time waiting time; eg: 50, 10, 30, 100, 1000
      */
     //%block="Calibration S0 %S0|S1 %S1|S2 %S2|S3 %S3|OUT %OUT|time (ms)%time"
     //%blockExternalInputs=true
