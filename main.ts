@@ -72,18 +72,19 @@ namespace tcs3200 {
                 pins.digitalWritePin(s3, 0)
                 reset_wavecount(freq)
                 returnValue = wavecount * r_factor
+                break
             case 1:
                 pins.digitalWritePin(s2, 1)
                 pins.digitalWritePin(s3, 1)
                 reset_wavecount(freq)
                 returnValue = wavecount * g_factor
+                break
             case 2:
                 pins.digitalWritePin(s2, 0)
                 pins.digitalWritePin(s3, 1)
                 reset_wavecount(freq)
                 returnValue = wavecount * b_factor
-            default:
-                returnValue = 0
+                break
         }
         if (returnValue <= 255) {
             return returnValue
