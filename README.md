@@ -5,18 +5,18 @@
 * S2, S3 used in selection filter type.
 * OUT is frequency output pin.
 * VCC and GND for supply voltage and ground.
-* It takes serval seconds to calibrate the sensor. When calibrating the sesnor, "C" is shown in the display or you can use the serial monitor for more details and more convenient.
+* It takes some time to calibrate the sensor. When calibrating the sesnor, "C" is shown in the display or you can use the serial monitor for more details and more convenience.
 - check Footnotes for more details.
 
 ## Blocks
 
 ### Calibration
-To calibrate the color sensor.
+To calibrate the color sensor. You can specify the calibration time for each color, the longer it takes to calibrate, the more accurate it will be (theoretically).
 
 Connect the sensor to a micro:bit. Set up the pins and place the sensor in white paper then start running the block.
 
 ## color
-To get the RGB value. It takes 1 second for each colors.
+To get the RGB value (0 - 255) for selected color.
 
 ## TODO (package)
 
@@ -37,7 +37,7 @@ MIT
 
 * for PXT/microbit
 ```sig
-GitHub: DoraLC/pxt-color_sensor
+GitHub: DoraLC/pxt-tcs3200-color-sensor
 ```
 (The metadata above is needed for package search.)
 
