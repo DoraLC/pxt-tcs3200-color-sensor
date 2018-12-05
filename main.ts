@@ -27,7 +27,7 @@ namespace tcs3200 {
      * Calibrate the sensor.
      * @param time waiting time; eg: 50, 10, 30, 100, 1000
      */
-    //%block="Calibration S0 %S0|S1 %S1|S2 %S2|S3 %S3|OUT %OUT|time (ms)%time"
+    //%block="Calibration |S0 %S0|S1 %S1|S2 %S2|S3 %S3|OUT %OUT|time (ms)%time"
     //%blockExternalInputs=true
     export function calibration(S0: DigitalPin, S1: DigitalPin, S2: DigitalPin, S3: DigitalPin, OUT: DigitalPin, time: number): void {
         s2 = S2
