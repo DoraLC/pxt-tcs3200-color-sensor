@@ -1,4 +1,4 @@
-# pxt-color_sensor
+# pxt-tcs3200-color-sensor
 
 * for TCS3200 color sensor
 * S0, S1 used for output frequency scaling selection inputs. It is preset at 2%.
@@ -15,8 +15,8 @@ To calibrate the color sensor. You can specify the calibration time for each col
 
 Connect the sensor to a micro:bit. Set up the pins and place the sensor in white paper then start running the block.
 
-## color
-To get the RGB value (0 - 255) for selected color.
+### color
+Return the RGB value (0 - 255) for selected color.
 
 ## TODO (package)
 
